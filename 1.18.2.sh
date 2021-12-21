@@ -10,7 +10,7 @@ yum install -y yum-utils
 yum-config-manager \
     --add-repo \
     http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
-yum install docker-ce docker-ce-cli containerd.io
+yum install docker-ce docker-ce-cli containerd.io -y
 systemctl start docker
 
 cat <<EOF > /etc/yum.repos.d/kubernetes.repo
